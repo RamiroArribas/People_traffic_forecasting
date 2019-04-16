@@ -4,12 +4,12 @@
 
 · Import the weather data (and data from other relevant sources)
 
-· Set date time as index and concatenate the dataframes: the keys for the concatenation will be the index and the SiteId
+· Set date time as index and concatenate the data frames: the keys for the concatenation will be the index and the SiteId
 
 
 ## 2.- Exploratory analysis of each SiteId (separetely)
 
-· Check for consistency (wether the time series is continuous or not)
+· Check for consistency (whether the time series is continuous or not)
 
 · Check for NaNs
 
@@ -23,7 +23,7 @@
 
 · Create a correlation matrix
 
-· (To be tested): decompose the series in a meaningful way. If there are undistinguishable patterns due to the high frequency of the data, aggregate it just to extract insights (even if you keep the data in its original frequency when modelling).
+· (To be tested): decompose the series in a meaningful way. If there are indistinguishable patterns due to the high frequency of the data, aggregate it just to extract insights (even if you keep the data in its original frequency when modelling).
 
 
 ## 3.- Feature engineering
@@ -43,7 +43,9 @@
 
 ## 4.- Modelling
 
-· Develop a test harness: data extraction, resampling techinique and performance measure to be used (RMSE, R^2 and R^2-Adjusted)
+· Develop a test harness: data extraction, resampling technique and performance measure to be used (RMSE, R^2 and R^2-Adjusted)
+
+· Wirte the code for the walk-forward validation
 
 · Try different models: baseline (naïve forecast), multivariate linear regression (autoregression using lags), K-nearest neighbourhood, Random Forest, ARIMA & others (consider SVM, ensemble methods such as AdaBoost, etc.).
 
@@ -60,11 +62,22 @@
   - Save the predictions both in unique results and confidence intervals
   - Make predictions for the next day, 3 days and 7 days. Plot predicted vs. observed and check that the error of the 7 days forecast is larger than 1 day 
   - Apply walk-forward validation vs. classical train-test: compare which one yields the best performing scores and plot predictions of both sampling methods vs. the observed data
+
+· Prepare code to save and load each of the models.
+
+· (To be tested): compare the results obtained by each model vs. the results with aggregated data by day
   
   
 ## 5.- Conclusions
 
 · Make a point on the traffic data: does it contain enough information by itself or the models perform better with weather data?
+
+· Is it feasible to apply walk-forward validation for each model?
+
+· How would you implement it on production? 
+  - How much historical data do we need to implement the predictive algorithm?
+
+· Even though we are looking for a generic algorithm, discuss the advantages of adapting the algorithm and its features for each specific domain (different business schedules, different forecasting applications, etc.) 
   
 
 ## 6.- Appendices
