@@ -66,3 +66,8 @@
 
 · Make a point on the traffic data: does it contain enough information by itself or the models perform better with weather data?
   
+
+## 6.- Appendices
+
+· Create a notebook specifying all the libraries needed (and a file containing the virtual environment in which the project was developed).
+· Create the dashboard in which to showcase the project
