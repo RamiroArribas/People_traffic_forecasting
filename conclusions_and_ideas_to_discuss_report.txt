@@ -1,0 +1,28 @@
+LR model conclusions: Maragall
+--------------------
+
+As shown by the results (scoring and plots), the model that yields the best results when predicting (unknown) future values is the one based on the following:
+	- The high frequency data is the one that has to be used. The number of lags used where those of the last 7 days. That same hypothesis has been applied in both scenarios (high frequency data, with 48*7 lags, and data grouped by day, with 7 lags), with significantly different results. On the day-frequency data using just lags, after approximately one month of predictions the signal is almost lost: from that point, all predictions fluctuate near 8000 people / day.
+	- All columns have to be used as regressors: the models that use just lags have a lower performance. The open/closed regressor cannot be used on the daily grouped scenarios, thus losing one feature compared to the others. 
+
+
+The results seem to point towards one idea: the more relevant, sensible to the domain data used, the better the results will be. The objective of the present project is to come up with a generic predictor, but its results will be worse than a predictor adapted to the specifics of the domain.
+
+
+
+
+LIST OF CHOICES (to be discussed and justified on the report)
+---------------
+
+· Treatment of outliers: keep them or modify them?
+· Amount of lag features to be used: 1 day (48 observations), 1 week (48*7)...
+· Engineering features applied: work-day/weekend-day, outlier or not, etc...
+· Whether to apply data transformation or not (using a box-cox transformation or some other technique)
+· Whether to apply regularization or not: most likely yes (since measures of the order of thousands will be used alongside very small ones)
+· Resampling technique to be used: classical train-test split, walk-forward validation...
+· Which prediction algorithms to be used and WHY
+(To do if there's enough time): discuss the method of grid search of hyperparameters for each model
+· Performance scoring measure(s) used
+· Decisions taken in light of the results of each model (after analysis of residuals, for example).
+
+· Improvements: application of algorithms not used here, comparison of results between transformed and not transformed data, etc.
