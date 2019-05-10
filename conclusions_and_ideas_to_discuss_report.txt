@@ -11,6 +11,35 @@ The results seem to point towards one idea: the more relevant, sensible to the d
 
 
 
+ARIMA results farming:
+---------------------
+
+Originally, the function to get results from the ARIMA model was very similar to the general one. After almost a thousand iterations, a Runtime Warning error kept appearing:
+
+RuntimeWarning: overflow encountered in multiply
+
+Therefore, instead of updating the model each iteration, it was decided to transform the data to be able to fit exogenous variables each iteration but without updating the model.
+
+
+
+Comparison between models:
+-------------------------
+
+Even thought in globals terms, the linear regression model get better scoring results, when considering shorter time windows the difference is not that big. Actually, in a time window of 12 days it even reaches better scoring results.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 LIST OF CHOICES (to be discussed and justified on the report)
 ---------------
 
