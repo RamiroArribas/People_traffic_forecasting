@@ -2,9 +2,9 @@
 
 This is my project for the Data Science Master in KSchool. The purpose of it is to demonstrate the knowledge and skills acquired during the Master's. I wanted it to be industry related, so I decided to look for companies willing to share their data. 
 
-Eventually I contacted with one company dedicated to the analysis of customer information using biometric technologies. They offer their clients services of customer analysis, supplying them with the information they need to make informed decisions and optimize their business strategies to make them more profitable. They are looking to widen the services offered in their catalogue and they proposed me to try and find a predictor of people traffic compatible with the data they already gather.
+Eventually I contacted with one company dedicated to the analysis of customer information using biometric technologies. They offer their clients services of customer analysis, supplying them with the information they need to make informed decisions and optimize their business strategies to make them more profitable. They are looking to widen the services offered in their catalogue and they proposed me to try and find a predictor of people traffic using the data they already gather.
 
-So that became the purpose of this project: to find a generic predictor of people traffic for a given time window (that can range from 1 to 10 days) using machine learning algorithms.
+So that became the purpose of this project: to establish the foundations of a generic predictor of people traffic for a given time window, compatible with their current systems, using machine learning algorithms .
 
 During the development, the aim has been to be able to answer the following questions:
 
@@ -105,7 +105,7 @@ Comparisons of the two resolutions have been made, grouping the high frequency f
 
 **Insert table comparing original an daily data performance scoring measures**
 
-The interest of the project, though, is to find high accuracies for the next 1 to 10 days. When estimating the RMSE for the first 14 days it can be observed that even though in general terms the high frequency curve has smaller values, the daily curve has a better scoring some days:
+The interest of the project, though, is to find high accuracies for the next immediate days. When estimating the RMSE for the first 14 days it can be observed that even though in general terms the high frequency curve has smaller values, the daily curve has a better scoring some days:
 
 **Insert graphic of RMSE curves for 14 days**
 
