@@ -2,6 +2,35 @@
 
 This is my project for the Data Science Master in KSchool. The purpose of it is to demonstrate the knowledge and skills acquired during the Master's. I wanted it to be industry related, so I decided to look for companies willing to share their data. 
 
+First of all, please refer to the requirements section below for instructions to set the environment to run the project. To check the contents step by step, please follow the notebooks in order as per their index. 
+
+
+
+Requirements:
+-------------
+
+It is highly encouraged to run the project on a new python environment:
+
+
+conda create -n ptfenv python=3.6
+
+
+Afterwards, activate the new environment created (named 'ptfenv') and install the necessary libraries running the following instruction in your console:
+
+
+pip install -r requirements.txt
+
+
+You are all set!
+
+
+
+
+
+
+
+
+
 Eventually I contacted with one company dedicated to the analysis of customer information using biometric technologies. They offer their clients services of customer analysis, supplying them with the information they need to make informed decisions and optimize their business strategies to make them more profitable. They are looking to widen the services offered in their catalogue and they proposed me to try and find a predictor of people traffic using the data they already gather.
 
 So that became the purpose of this project: to establish the foundations of a generic predictor of people traffic for a given time window, compatible with their current systems, using machine learning algorithms .
