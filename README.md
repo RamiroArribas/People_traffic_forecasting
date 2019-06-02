@@ -5,7 +5,7 @@ This is my project for the Data Science Master in KSchool. The purpose of it is 
 
 The objective has been to establish the basis for the implementation of a people traffic forecasting model. Specifically, their interest lies in finding an all-around model (as less domain-specific as possible) as a first approach to include this service in their catalogue.
 
-For reviewing the project, first of all please refer to the requirements section below. It provides instructions to set the environment to run it. It is recommended to follow the notebooks in order as per their index. For a detailed description of the project, please refer to the ***memorandum*** (mark it as a link). 
+For reviewing the project, first of all please refer to the requirements section below. It provides instructions to set the environment to run it. It is recommended to follow the notebooks in order as per their index. For a detailed description of the project, please refer to the [memorandum](https://github.com/RamiroArribas/People_traffic_forecasting/blob/master/memorandum.pdf). 
 
 
 Any comment or suggestion will be more than welcome.
