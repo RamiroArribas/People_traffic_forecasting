@@ -16,11 +16,11 @@ Requirements:
 
 It is highly encouraged to run the project on a new python environment. For example, if you are using the anaconda distribution:
 
-    conda create -n ptfenv python=3.6
+    $ conda create -n ptfenv python=3.6
 
 Afterwards, activate the new environment created (named 'ptfenv' in the example) and install the necessary libraries running the following instruction in your console:
 
-    pip install -r requirements.txt
+    $ pip install -r requirements.txt
 
 
 Done!
